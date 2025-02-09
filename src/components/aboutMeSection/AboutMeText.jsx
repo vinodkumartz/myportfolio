@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 const AboutMeText = () => {
   // Function to open resume in a new tab
   const handleOpenResume = () => {
-    const resumeUrl = "https://drive.google.com/file/d/13457vMgnZmipJGvcavEI_gigaLBsMiUc/view?usp=sharing"; 
+    const resumeUrl = "https://drive.google.com/file/d/17OvvuLRAztNk6-7a8q1aAGVkEZt0ERrl/view?usp=sharing"; 
     window.open(resumeUrl, "_blank", "noopener,noreferrer"); // ✅ Opens in a new tab
   };
 
