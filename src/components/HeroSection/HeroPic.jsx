@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { fadeIn } from "../../components/framerMotion/variants";
-import { PiHexagonThin } from "react-icons/pi";
 
 const HeroPic = () => {
   return (
@@ -12,15 +11,11 @@ const HeroPic = () => {
       className="relative flex items-center justify-center"
     >
       {/* Profile Image */}
-      <img src="../../public/images/about-me.png" />
-
-      {/* Hexagon Rings Positioned Below Image */}
-      <div className="absolute -bottom-10 flex justify-center items-center">
-        <PiHexagonThin className="h-[450px] sm:h-[300px] text-cyan opacity-70 animate-[spin_20s_linear_infinite]" />
-      </div>
-      <div className="absolute -bottom-10 flex justify-center items-center">
-        <PiHexagonThin className="h-[450px] sm:h-[300px] text-orange opacity-50 blur-md animate-[spin_20s_linear_infinite]" />
-      </div>
+      <img 
+        src="../../public/images/about-me.png"
+        alt="Vinod Kumar"
+        className="w-auto h-auto max-w-[500px] md:max-w-[450px] sm:max-w-[350px]" 
+      />
     </motion.div>
   );
 };
