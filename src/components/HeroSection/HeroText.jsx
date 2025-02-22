@@ -1,17 +1,16 @@
 import { motion } from "framer-motion";
 import { fadeIn } from "../../components/framerMotion/variants";
-import { BsFillArrowUpRightCircleFill } from "react-icons/bs"; 
 
 const HeroText = () => {
   return (
-    <div className="flex flex-col gap-8 h-full justify-center md:text-left sm:text-center">
+    <div className="flex flex-col gap-5 h-full justify-center text-center md:text-left">
       {/* Heading Section */}
       <motion.h2
         variants={fadeIn("down", 0.2)}
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0 }}
-        className="md:text-[3rem] gap-7 sm:text-2xl uppercase text-orange font-bold"
+        className="text-5xl md:text-5xl lg:text-6xl text-orange font-bold uppercase"
       >
         Data Enthusiast
       </motion.h2>
@@ -21,10 +20,9 @@ const HeroText = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0 }}
-        className="md:text-[2.8rem] lg:text-6xl  sm:text-4xl text-orange font-bold uppercase"
+        className="text-4xl md:text-4xl lg:text-5xl text-orange font-bold uppercase"
       >
-        Vinod <br className="sm:hidden md:block" />
-        Kumar
+        Vinod Kumar
       </motion.h1>
 
       {/* Description Section */}
@@ -33,13 +31,13 @@ const HeroText = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0 }}
-        className="md:text-[1.8rem] text-white"
+        className="text-2xl text-2xl md:text-2xl lg:text-2xl text-white leading-relaxed max-w-xl mx-auto md:mx-0"
       >
-        I am passionate about uncovering insights from data, continuously learning,<br></br> 
-        and enhancing my critical thinking, problem-solving, analytical skills,<br></br> 
-        statistical analysis, and data visualization. I specialize in creating data <br></br>
-        pipelines for complex datasets and making data-driven decisions to build 
-        <br></br> impactful AI solutions.
+        
+        I am passionate about uncovering insights from data, continuously learning,
+        and refining my problem-solving, analytical, and statistical skills.  
+        I specialize in building data pipelines, visualizing complex datasets,  
+        and making data-driven decisions to develop impactful AI solutions.
       </motion.p>
     </div>
   );

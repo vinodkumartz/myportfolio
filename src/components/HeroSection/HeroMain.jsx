@@ -5,13 +5,11 @@ import HeroBackground from "./HeroBackground";
 
 const HeroMain = () => {
   return (
-    <div 
-      className="relative pt-40 pb-16 bg-cover bg-center bg-no-repeat"
-      // style={{ backgroundImage: "url('/images/evening.jpg')" }} // Corrected path
-    >
+    <div className="relative pt-28 pb-12 bg-cover bg-center bg-no-repeat">
       <HeroBackground /> 
 
-      <div className="flex md:flex-row sm:flex-col max-w-[1200px] mx-auto justify-between items-center relative px-4">
+      {/* Flex container for Hero Section */}
+      <div className="flex flex-col-reverse md:flex-row max-w-[1200px] mx-auto justify-between items-center px-4">
         <HeroText />
         <HeroPic />
       </div>

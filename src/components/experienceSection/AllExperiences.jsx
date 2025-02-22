@@ -66,47 +66,52 @@ const ExperienceSection = () => {
   };
 
   return (
-    <div className="max-w-18xl mx-auto py-16 px-12 text-center">
-      <div className="relative bg-gray-900 text-beige p-16 rounded-xl shadow-xl w-[90%] mx-auto">
+    <div className="max-w-4xl mx-auto py-12 px-6 text-center">
+      <div className="relative bg-gray-900 text-white p-8 rounded-xl shadow-xl w-full sm:w-[90%] mx-auto">
 
-        {/* Title - Large, Bold, Orange */}
-        <h3 className="text-5xl font-bold text-orange">
+        {/* Title */}
+        <h3 className="text-3xl md:text-4xl font-bold text-orange">
           {experiences[currentIndex].title}
         </h3>
 
-        {/* Supervisor (if available) */}
+        {/* Supervisor */}
         {experiences[currentIndex].supervisor && (
-          <p className="text-xl text-orange mt-2">
+          <p className="text-lg md:text-2xl text-orange mt-2">
             {experiences[currentIndex].supervisor}
           </p>
         )}
 
-        {/* Company/Department - Slightly Smaller Than Title */}
-        <p className="text-2xl text-orange mt-2">
+        {/* Company/Department */}
+        <p className="text-lg md:text-3xl text-orange mt-2">
           {experiences[currentIndex].department || experiences[currentIndex].company}
         </p>
 
-        {/* Duration - Slightly Smaller Than Title */}
-        <p className="text-xl text-orange mt-2">{experiences[currentIndex].duration}</p>
+        {/* Duration */}
+        <p className="text-md  md:text-2xl text-gray-400 mt-2">
+          {experiences[currentIndex].duration}
+        </p>
 
-        {/* Responsibilities - Large (text-2xl) */}
-        <ul className="mt-10 text-beige list-disc list-inside text-left space-y-4 text-2xl text-gray-200">
+        {/* Responsibilities */}
+        <ul className="mt-6 md:text-2xl text-left space-y-2 text-md sm:text-lg">
           {experiences[currentIndex].responsibilities.map((item, idx) => (
-            <li key={idx}>{item}</li>
+            <li key={idx} className="flex items-start">
+              <span className="text-orange mr-2">•</span>
+              {item}
+            </li>
           ))}
         </ul>
 
         {/* Navigation Buttons */}
-        <div className="flex justify-between mt-10">
+        <div className="flex justify-between mt-6">
           <button
             onClick={prevExperience}
-            className="bg-blue-500 text-aqua  hover:border-orange px-6 py-3 rounded-lg text-3xl font-semibold hover:bg-blue-600"
+            className="bg-blue-500 md:text-3xl text-orange px-4 py-2 rounded-lg text-lg font-semibold hover:bg-blue-600"
           >
             ← Previous
           </button>
           <button
             onClick={nextExperience}
-            className="bg-blue-500 text-aqua  hover:border-orange px-6 py-3 rounded-lg text-3xl font-semibold hover:bg-blue-600"
+            className="bg-blue-500 md:text-3xl text-orange  px-4 py-2 rounded-lg text-lg font-semibold hover:bg-blue-600"
           >
             Next →
           </button>
