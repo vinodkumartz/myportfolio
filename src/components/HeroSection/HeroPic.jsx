@@ -13,7 +13,11 @@ const HeroPic = () => {
     >
       {/* Profile Image */}
       <img
+<<<<<<< HEAD
         src="../../public/images/about-me.png"
+=======
+        src="/images/HexaPic.png" 
+>>>>>>> 6c49e6190e40152519ce75444f1f503cf0f7a008
         alt="Vinod Kumar"
         className="max-h-[500px] sm:max-h-[400px] w-auto z-10"
       />
