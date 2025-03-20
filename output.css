@@ -148,7 +148,7 @@ html,
   line-height: 1.5; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
   -ms-text-size-adjust: 100%; /* For IE */
-  text-size-adjust: 100%; /* Modern browsers */
+   text-size-adjust: 100%; /* Modern browsers */
   -moz-tab-size: 4; /* 3 */
   -o-tab-size: 4;
      tab-size: 4; /* 3 */
