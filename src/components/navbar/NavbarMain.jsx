@@ -24,7 +24,7 @@ const NavbarMain = () => {
         </h1>
 
         {/* Desktop Links */}
-        <ul className="hidden md:flex gap-8 text-lg">
+        <ul className="hidden md:flex gap-8 text-2xl">
           {links.map((link, index) => (
             <li key={index}>
               <Link
@@ -42,7 +42,7 @@ const NavbarMain = () => {
         </ul>
 
         {/* Hire Me Button */}
-        <button className="hidden md:flex px-5 py-3 rounded-full text-lg font-bold text-darkOrange border border-orange flex items-center gap-2 bg-gradient-to-r from-darkCyan transition-transform duration-300 hover:scale-105">
+        <button className="hidden md:flex px-5 py-3 rounded-full text-2xl font-bold text-darkOrange border border-orange flex items-center gap-2 bg-gradient-to-r from-darkCyan transition-transform duration-300 hover:scale-105">
           <Link spy={true} smooth={true} duration={500} offset={-100} to="contact">
             Hire Me
           </Link>

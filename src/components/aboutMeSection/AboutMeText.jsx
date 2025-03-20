@@ -2,15 +2,10 @@ import { Link } from "react-scroll";
 
 const AboutMeText = () => {
   // Function to open resume in a new tab
-  const handleOpenResume = () => {
-<<<<<<< HEAD
-    const resumeUrl =
-      "https://drive.google.com/file/d/13457vMgnZmipJGvcavEI_gigaLBsMiUc/view?usp=sharing";
-    window.open(resumeUrl, "_blank", "noopener,noreferrer");
-=======
-    const resumeUrl = "https://drive.google.com/file/d/17OvvuLRAztNk6-7a8q1aAGVkEZt0ERrl/view?usp=sharing"; 
-    window.open(resumeUrl, "_blank", "noopener,noreferrer"); // ✅ Opens in a new tab
->>>>>>> 6c49e6190e40152519ce75444f1f503cf0f7a008
+  
+    const handleOpenResume = () => {
+      const resumeUrl = "https://drive.google.com/file/d/1jpK-qk8StlRqV62acOJUv7XMeIDr-HO1/view?usp=sharing"; 
+      window.open(resumeUrl, "_blank", "noopener,noreferrer"); // ✅ Opens in a new tab
   };
 
   return (
